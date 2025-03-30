@@ -1,0 +1,868 @@
+WEBVTT
+
+00:00.000 --> 00:01.590
+-: Hi, welcome back.
+
+00:01.590 --> 00:05.190
+I am Kalyan Reddy Daida and I will be your instructor
+
+00:05.190 --> 00:09.210
+in this EKS Kubernetes Masterclass course.
+
+00:09.210 --> 00:13.050
+So let's see the course outline on a high level.
+
+00:13.050 --> 00:16.440
+So this outline is also going to be very detailed
+
+00:16.440 --> 00:18.840
+because the course is also a very longer course
+
+00:18.840 --> 00:21.990
+which hits close to 20 of us. An outline,
+
+00:21.990 --> 00:25.530
+also we need to understand in detail before going in.
+
+00:25.530 --> 00:29.190
+So we'll see what all concepts we are going to cover
+
+00:29.190 --> 00:31.410
+as part of this course.
+
+00:31.410 --> 00:34.950
+So we have divided the topics into four major sections.
+
+00:34.950 --> 00:38.970
+So which is Kubernetes concepts, AWS services, integration
+
+00:38.970 --> 00:42.870
+with EKS means like what all AWS services we can use
+
+00:42.870 --> 00:45.681
+in relation with elastic Kubernetes service
+
+00:45.681 --> 00:50.681
+of AWS and Dev-Ops concepts and then microservices concepts.
+
+00:51.060 --> 00:55.050
+So let's see what all covered under Kubernetes concepts.
+
+00:55.050 --> 00:57.690
+So close to 30 Kubernetes concepts are covered
+
+00:57.690 --> 01:00.240
+as part of this entire course and whenever
+
+01:00.240 --> 01:03.130
+we are writing these concepts related
+
+01:03.130 --> 01:05.580
+YAML declarative files, we are going to
+
+01:05.580 --> 01:10.470
+do a live template writing sections wherever it is required.
+
+01:10.470 --> 01:13.710
+So in addition to that, covering all these Kubernetes
+
+01:13.710 --> 01:17.788
+concepts, we also cover integration with close to 18
+
+01:17.788 --> 01:22.368
+or 19 AWS services in relation with EKS. Which is
+
+01:22.368 --> 01:26.310
+elastic Kubernetes service for example, you can see here
+
+01:26.310 --> 01:28.830
+so this is EKS and then we'll have Fargate
+
+01:28.830 --> 01:31.590
+we'll have certificate manager, we'll have Route 53,
+
+01:31.590 --> 01:36.120
+we'll have elastic block store and RDS database
+
+01:36.120 --> 01:39.810
+and then elastic load balancing with the classic load
+
+01:39.810 --> 01:42.023
+balancer, network load balancer and
+
+01:42.023 --> 01:45.213
+application load balancer with ingress service.
+
+01:46.172 --> 01:48.480
+So like this all, whatever the possibilities there
+
+01:48.480 --> 01:52.350
+which are in integration with EKS, we have tried to get them
+
+01:52.350 --> 01:57.000
+under this course. And next thing is Dev-Ops, right?
+
+01:57.000 --> 02:00.840
+So from Dev-Ops perspective, using AWS code services.
+
+02:00.840 --> 02:04.470
+We have implemented IT Dev-Ops pipeline to understanding
+
+02:04.470 --> 02:07.410
+better for both the applications and also
+
+02:07.410 --> 02:10.110
+the Kubernetes manifest. So, which means
+
+02:10.110 --> 02:13.140
+like if you make any change to your Kubernetes manifest
+
+02:13.140 --> 02:15.060
+and then check in that core that will get
+
+02:15.060 --> 02:17.340
+deployed to your Kubernetes cluster.
+
+02:17.340 --> 02:20.580
+If you make any changes to your application and then check
+
+02:20.580 --> 02:23.040
+in your application core. So it'll build
+
+02:23.040 --> 02:25.050
+a new docker image and then deploy
+
+02:25.050 --> 02:28.004
+to the Kubernetes cluster. So both ways,
+
+02:28.004 --> 02:30.450
+the pipeline is built for you.
+
+02:30.450 --> 02:33.060
+And next is microservices. So,
+
+02:33.060 --> 02:35.670
+from microservices perspective, the core concepts
+
+02:35.670 --> 02:39.120
+in relation with Kubernetes will be service discovery,
+
+02:39.120 --> 02:42.300
+distributed tracing, and then canary deployments.
+
+02:42.300 --> 02:45.300
+So those also we have looked into before moving on
+
+02:45.300 --> 02:47.400
+to bigger things in Kubernetes.
+
+02:47.400 --> 02:50.130
+So we are going to learn both docker and then
+
+02:50.130 --> 02:53.520
+Kubernetes fundamentals in the fundamental section.
+
+02:53.520 --> 02:56.640
+So there will be a dedicated docker fundamental
+
+02:56.640 --> 02:59.430
+section available for us. So where we build
+
+02:59.430 --> 03:01.920
+a simple docker image, push it to docker hub
+
+03:01.920 --> 03:04.830
+and then even pull from docker hub and then understand
+
+03:04.830 --> 03:07.980
+that docker terminology like what is docker registry?
+
+03:07.980 --> 03:11.370
+What is docker hub? What is docker image? What is container?
+
+03:11.370 --> 03:13.110
+So we'll understand all those things
+
+03:13.110 --> 03:15.840
+in the docker fundamental section.
+
+03:15.840 --> 03:18.060
+And then we'll want to Kubernetes
+
+03:18.060 --> 03:21.270
+fundamental section wherein we will primarily
+
+03:21.270 --> 03:23.730
+focus on implementing Kubernetes
+
+03:23.730 --> 03:27.690
+concepts using imperative way and then declarative way.
+
+03:27.690 --> 03:30.750
+So here we do lot of live template writing
+
+03:30.750 --> 03:33.390
+in the declarative way and then lot
+
+03:33.390 --> 03:37.650
+of Kubernetes cube CTL command in the imperative section
+
+03:37.650 --> 03:42.630
+and then get a full idea about Kubernetes from ports,
+
+03:42.630 --> 03:46.800
+replica sets, deployments and then services perspective.
+
+03:46.800 --> 03:49.740
+And from there we'll jump onto big course.
+
+03:49.740 --> 03:53.760
+So we will start with in this course with the EKS storage
+
+03:53.760 --> 03:57.750
+with EBS CSI driver, which is elastic block store
+
+03:57.750 --> 04:00.360
+and then implement and then learn as part
+
+04:00.360 --> 04:03.000
+of that we'll learn how to write a deployment
+
+04:03.000 --> 04:05.250
+how to write a Myer skill cluster IP service
+
+04:05.250 --> 04:07.470
+or how to write a note port service
+
+04:07.470 --> 04:11.100
+and environmental variables, how you are going to define
+
+04:11.100 --> 04:13.470
+and volumes, volume mounts, everything
+
+04:13.470 --> 04:16.770
+whatever is related to this respective section.
+
+04:16.770 --> 04:18.700
+You'll do a live template writing,
+
+04:18.700 --> 04:21.960
+here and then understand all these concepts and then
+
+04:21.960 --> 04:25.290
+provision these things from your Kubernetes manifest.
+
+04:25.290 --> 04:26.970
+So, and then you'll understand
+
+04:26.970 --> 04:30.780
+about what are the drawbacks of using EBS CSI driver?
+
+04:30.780 --> 04:32.970
+And what are the advantages you are going to
+
+04:32.970 --> 04:36.516
+get using RDS database. And then later,
+
+04:36.516 --> 04:38.880
+using external name service you are going
+
+04:38.880 --> 04:42.660
+to implement it with RDS database.
+
+04:42.660 --> 04:46.252
+So now you have completed the database part
+
+04:46.252 --> 04:48.840
+with the storage section of storage classes
+
+04:48.840 --> 04:51.990
+persistent volume claim config maps, all those things.
+
+04:51.990 --> 04:55.710
+So then you'll move on to load balances section, right?
+
+04:55.710 --> 04:58.110
+So before moving on to load balances section
+
+04:58.110 --> 05:00.180
+whatever you have implemented it's equal
+
+05:00.180 --> 05:02.430
+and network diagram looks this way.
+
+05:02.430 --> 05:05.340
+So, now, anyway we know that load balances
+
+05:05.340 --> 05:08.070
+need to run on public subnets and then our workloads
+
+05:08.070 --> 05:10.110
+need to run on private subnets.
+
+05:10.110 --> 05:12.840
+So to do so what you are going to do immediately
+
+05:12.840 --> 05:15.930
+you are going to delete this respective worker notes here
+
+05:15.930 --> 05:19.800
+and then move your workloads to your private subnets.
+
+05:19.800 --> 05:22.200
+So you are going to do this and then ensure
+
+05:22.200 --> 05:24.720
+that you create a classic load balancer in your public
+
+05:24.720 --> 05:27.930
+sublet and then access it. So now you have
+
+05:27.930 --> 05:31.500
+implemented your classic load balancer related manifest.
+
+05:31.500 --> 05:34.680
+Also, in addition to your, this whole manifest whatever you
+
+05:34.680 --> 05:36.803
+have built earlier. And then you will
+
+05:36.803 --> 05:39.330
+move on to also creating a network
+
+05:39.330 --> 05:42.240
+load balancer manifest and then testing it.
+
+05:42.240 --> 05:45.840
+So now you have used classic and then network load balancer.
+
+05:45.840 --> 05:48.690
+So now you'll move on to the ingress service
+
+05:48.690 --> 05:51.145
+which is super advanced and then
+
+05:51.145 --> 05:54.990
+with the tons of features inside that.
+
+05:54.990 --> 05:58.080
+So with the ingress service you are
+
+05:58.080 --> 06:01.170
+going to implement context part based routing.
+
+06:01.170 --> 06:02.940
+Using means like with three applications
+
+06:02.940 --> 06:05.100
+you are going to deploy and then you'll
+
+06:05.100 --> 06:07.320
+implement the context part based routing
+
+06:07.320 --> 06:09.990
+with slash app. One should go to app one.
+
+06:09.990 --> 06:12.900
+App two should go to app two and then anything
+
+06:12.900 --> 06:17.730
+other than that should go to user management microservice.
+
+06:17.730 --> 06:20.537
+In addition to that, in the same ingress service
+
+06:20.537 --> 06:23.910
+you'll implement SSL. So you'll enable
+
+06:23.910 --> 06:26.070
+the SSL for your application here.
+
+06:26.070 --> 06:29.550
+Okay, and then you'll also implement HTTP two,
+
+06:29.550 --> 06:33.630
+HTTPS redirection using SSL redirect.
+
+06:33.630 --> 06:36.510
+And finally, in ingress load balance
+
+06:36.510 --> 06:39.060
+of ALB ingress load balancer you are also
+
+06:39.060 --> 06:41.610
+going to implement external DNS.
+
+06:41.610 --> 06:44.458
+So external DNS, what it does is automatically
+
+06:44.458 --> 06:47.608
+from the Kubernetes manifest you are going to
+
+06:47.608 --> 06:52.608
+register your domain name in the Route 53 service.
+
+06:53.820 --> 06:55.920
+So that also you are going to do.
+
+06:55.920 --> 06:58.440
+So all these things once complete it means like the,
+
+06:58.440 --> 07:00.510
+we have completed the database part,
+
+07:00.510 --> 07:02.640
+we have completed the deployment part
+
+07:02.640 --> 07:05.610
+and we have completed the load balancer part.
+
+07:05.610 --> 07:07.740
+So then what comes next, right?
+
+07:07.740 --> 07:11.760
+So how to run these in Fargate serverless.
+
+07:11.760 --> 07:14.400
+So we will move on that section. Okay,
+
+07:14.400 --> 07:16.470
+so in Fargate serverless what we do is
+
+07:16.470 --> 07:20.010
+like we will run our workloads in a mixer mode.
+
+07:20.010 --> 07:22.230
+In such a way that we'll run few workloads
+
+07:22.230 --> 07:26.040
+on our regular manager note groups with easy two instances.
+
+07:26.040 --> 07:28.143
+And then we'll also run our Kubernates
+
+07:28.143 --> 07:31.140
+that is parts on Fargate. So we are going
+
+07:31.140 --> 07:34.620
+to implement this with again three applications, app one
+
+07:34.620 --> 07:39.240
+app two and then UMS in a mixer mode deployment.
+
+07:39.240 --> 07:43.110
+So wherein app one is running on the EKS manage node groups
+
+07:43.110 --> 07:48.110
+and UMS and then app two is running on EKS Fargate profiles.
+
+07:48.600 --> 07:51.990
+So this one also we are going to look into in detail.
+
+07:51.990 --> 07:55.170
+And then once we complete the Fargate, so we'll move on
+
+07:55.170 --> 07:58.230
+to understanding about elastic container registry.
+
+07:58.230 --> 08:02.760
+So in relation with EKS elastic Kubernetes service.
+
+08:02.760 --> 08:06.030
+So for that purpose what we do is like we'll move on
+
+08:06.030 --> 08:09.030
+with the creating a new docker image and then push it
+
+08:09.030 --> 08:11.786
+to the elastic container registry and then
+
+08:11.786 --> 08:16.786
+use the docker image in our Kubernetes cluster
+
+08:16.860 --> 08:19.560
+by deploying the workloads. So that one,
+
+08:19.560 --> 08:22.530
+we are going to test and as usual we'll continue
+
+08:22.530 --> 08:26.520
+with our ingress load balancer for all these sections also.
+
+08:26.520 --> 08:29.430
+Any way we have implemented earlier here, so
+
+08:29.430 --> 08:31.980
+in our application load balances section.
+
+08:31.980 --> 08:34.470
+So we'll continue to use that ingress load balancer
+
+08:34.470 --> 08:38.700
+in all the upcoming demos for getting complete Hands-On
+
+08:38.700 --> 08:41.400
+on that respective section two.
+
+08:41.400 --> 08:44.100
+Then we'll move on to the Dev-Ops section
+
+08:44.100 --> 08:46.758
+and understand the release processes, source build, test
+
+08:46.758 --> 08:49.500
+and then production. And we'll also
+
+08:49.500 --> 08:51.510
+understand about continuous integration
+
+08:51.510 --> 08:53.670
+continuous delivery, continuous deployment,
+
+08:53.670 --> 08:56.130
+and then infrastructure as code concepts.
+
+08:56.130 --> 08:59.760
+And then move on to understand
+
+08:59.760 --> 09:03.780
+about how we are going to implement the Dev-Ops concepts
+
+09:03.780 --> 09:08.160
+in AWS in relation with elastic Kubernetes service.
+
+09:08.160 --> 09:09.990
+So we'll understand about code commit
+
+09:09.990 --> 09:11.790
+checking the sample code here
+
+09:11.790 --> 09:13.860
+and we'll do the code bill means
+
+09:13.860 --> 09:16.860
+like we'll generate the artifacts and then we'll deploy them
+
+09:16.860 --> 09:20.940
+to our respective EKS cluster using cube CTL
+
+09:20.940 --> 09:23.550
+and code build combination. And then we
+
+09:23.550 --> 09:25.350
+are going to monitor our applications
+
+09:25.350 --> 09:28.530
+using Cloud Watch container insights.
+
+09:28.530 --> 09:32.280
+So we are also going to implement this Dev-Ops use case
+
+09:32.280 --> 09:36.060
+right? And then we'll move on to the microservices section
+
+09:36.060 --> 09:39.997
+with two independent microservices built exclusively
+
+09:39.997 --> 09:43.595
+for testing microservices, service discovery
+
+09:43.595 --> 09:46.830
+and then microservices distributed tracing
+
+09:46.830 --> 09:49.950
+and then microservices canary deployments.
+
+09:49.950 --> 09:53.070
+So we are going to use these two services
+
+09:53.070 --> 09:54.453
+user management microservice and
+
+09:54.453 --> 09:56.940
+then notification microservice and
+
+09:56.940 --> 09:59.850
+then implement the full use case.
+
+09:59.850 --> 10:02.340
+Okay? So whenever you as a developer
+
+10:02.340 --> 10:05.130
+when you use Postman client and create a user
+
+10:05.130 --> 10:07.050
+it'll call the notification API
+
+10:07.050 --> 10:09.870
+and then send an email to end user.
+
+10:09.870 --> 10:13.170
+So these two microservices using service discovery.
+
+10:13.170 --> 10:16.236
+How you are going to deploy to AWS,
+
+10:16.236 --> 10:20.640
+EKS and then this is the way we are going to deploy.
+
+10:20.640 --> 10:22.980
+So here we will have EMS note, port service
+
+10:22.980 --> 10:24.661
+my collection name, service notification
+
+10:24.661 --> 10:27.930
+cluster IP service. So, entire service discovery
+
+10:27.930 --> 10:31.140
+how you are going to handle it in, in relation with EKS.
+
+10:31.140 --> 10:33.840
+You are going to implement end to end.
+
+10:33.840 --> 10:36.240
+And then you'll move on to the next section
+
+10:36.240 --> 10:39.990
+of distributed tracing. So for distributed tracing,
+
+10:39.990 --> 10:43.980
+you need to deploy your demo sets with X reports.
+
+10:43.980 --> 10:46.530
+So using Kubernetes demonstrates concept
+
+10:46.530 --> 10:48.840
+you are going to deploy the X reports
+
+10:48.840 --> 10:52.470
+and this user management microservice application
+
+10:52.470 --> 10:55.290
+and then notification microservice application.
+
+10:55.290 --> 10:57.180
+What we have done here is like,
+
+10:57.180 --> 11:01.440
+so we have implemented x-ray using x-ray SDK
+
+11:01.440 --> 11:05.400
+in those things. So when you deploy those applications
+
+11:05.400 --> 11:08.730
+so how the x-ray is going to behave and then what happens.
+
+11:08.730 --> 11:12.510
+So using distributed tracing, we are going to see in detail.
+
+11:12.510 --> 11:15.420
+So whenever distributed tracing is enabled
+
+11:15.420 --> 11:18.540
+you can see the service map such a way that the request
+
+11:18.540 --> 11:21.390
+from client comes to user management microservice
+
+11:21.390 --> 11:24.570
+and then calls the notification microservice.
+
+11:24.570 --> 11:28.350
+So everything you are going to see in detail. From there
+
+11:28.350 --> 11:31.710
+you'll move onto traces also in extra traces
+
+11:31.710 --> 11:35.250
+if you see here, so the request came to user management
+
+11:35.250 --> 11:38.490
+microservice and inside that application it went to
+
+11:38.490 --> 11:42.990
+get notification app info, method, and from there it went
+
+11:42.990 --> 11:44.193
+to Kubernetes,
+
+11:45.616 --> 11:48.960
+Kubernetes service notification cluster service.
+
+11:48.960 --> 11:50.490
+And from there again it called
+
+11:50.490 --> 11:52.740
+the V one notification microservice, which
+
+11:52.740 --> 11:56.220
+in called the means like inside that notification
+
+11:56.220 --> 11:58.500
+app version service method was called.
+
+11:58.500 --> 12:00.690
+So these traces also we are going to look
+
+12:00.690 --> 12:04.620
+into in detail as part of this section.
+
+12:04.620 --> 12:07.230
+And then finally for microservices,
+
+12:07.230 --> 12:10.740
+we are also going to do the canary deployments, right?
+
+12:10.740 --> 12:13.780
+So whenever we call that user management microservice.
+
+12:13.780 --> 12:16.680
+There will be two versions of notification service
+
+12:16.680 --> 12:19.830
+will be live and the traffic will be distributed based
+
+12:19.830 --> 12:24.030
+on how much we configure 50, 50 or 75, 25 like that.
+
+12:24.030 --> 12:27.390
+So it is going to do the traffic distribution
+
+12:27.390 --> 12:29.040
+to V one notification and then
+
+12:29.040 --> 12:31.740
+V two notification microservices.
+
+12:31.740 --> 12:34.710
+And using Kubernetes out of the box features,
+
+12:34.710 --> 12:37.560
+whatever is available with the pod number changing.
+
+12:37.560 --> 12:41.430
+We are going to implement this canary deployments.
+
+12:41.430 --> 12:45.902
+So from there, we'll move on to horizontal pod autoscaler,
+
+12:45.902 --> 12:49.410
+vertical port autoscaler and also cluster autoscaler.
+
+12:49.410 --> 12:52.590
+So all the HPA, VPA and then CA concepts,
+
+12:52.590 --> 12:55.680
+we will implement in detail. And then we'll
+
+12:55.680 --> 12:59.580
+move on to the container insights, concepts which is nothing
+
+12:59.580 --> 13:04.560
+but Kubernetes monitoring and then logging section.
+
+13:04.560 --> 13:07.560
+So we are going to use Cloud Watch agent demo set
+
+13:07.560 --> 13:10.380
+in our Kubernetes cluster to get the metrics
+
+13:10.380 --> 13:12.360
+off all of our Kubernetes cluster
+
+13:12.360 --> 13:15.060
+and then applications deployed inside that.
+
+13:15.060 --> 13:17.670
+In addition to that, we are also going to deploy
+
+13:17.670 --> 13:20.940
+fluent D demonstrate, which will get the application logs
+
+13:20.940 --> 13:22.500
+and then Kubernetes cluster logs
+
+13:22.500 --> 13:24.810
+for us inside the Cloud Watch.
+
+13:24.810 --> 13:27.030
+So as a developer you are going to see what
+
+13:27.030 --> 13:30.030
+what container map and then container resources,
+
+13:30.030 --> 13:32.670
+performance dashboards, log groups, log insights,
+
+13:32.670 --> 13:34.710
+and then alarms. So you are going
+
+13:34.710 --> 13:37.530
+to implement all these things in a detailed manner.
+
+13:37.530 --> 13:39.240
+You'll, you'll implement alarms
+
+13:39.240 --> 13:41.040
+you'll understand about log insights.
+
+13:41.040 --> 13:43.170
+And then from log insights you are
+
+13:43.170 --> 13:44.940
+going to create the dashboards.
+
+13:44.940 --> 13:47.220
+So all these things you are going to do
+
+13:47.220 --> 13:49.590
+as part of container insights.
+
+13:49.590 --> 13:52.740
+So this is a quick view about the container insights map.
+
+13:52.740 --> 13:55.140
+So in EKS demo cluster, you can see
+
+13:55.140 --> 13:58.440
+that in Amazon Cloud watch namespace, you can see fluent D
+
+13:58.440 --> 14:00.960
+and then Cloud Watch agent parties running
+
+14:00.960 --> 14:03.030
+in cube system name space, you can see cube
+
+14:03.030 --> 14:07.590
+DNS node and then cube proxy related ports are running.
+
+14:07.590 --> 14:09.420
+And in default name space, whatever
+
+14:09.420 --> 14:11.400
+the application you have deployed.
+
+14:11.400 --> 14:14.580
+So those are running. Sample engine service, sample engines
+
+14:14.580 --> 14:18.600
+deployment related part. So all those things are running.
+
+14:18.600 --> 14:21.330
+So all in all, we are going to do all
+
+14:21.330 --> 14:24.210
+these things as part of this course.
+
+14:24.210 --> 14:27.630
+So in our next lecture we are going to see how GitHub repo
+
+14:27.630 --> 14:31.020
+and then understand how to move on with this course.
+
+14:31.020 --> 14:32.790
+So I'll see you in the next lecture.
+
+14:32.790 --> 14:34.383
+Until then, bye bye. Thank you.

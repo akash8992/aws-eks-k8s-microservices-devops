@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.000 --> 00:00.840
+-: Welcome back.
+
+00:00.840 --> 00:03.840
+In this lecture, we are going to look into three
+
+00:03.840 --> 00:07.800
+GitHub repositories available for this masterclass course.
+
+00:07.800 --> 00:11.010
+So we'll have AWS EKS Kubernetes Masterclass
+
+00:11.010 --> 00:14.460
+under StackSimplify, and also two more repositories.
+
+00:14.460 --> 00:17.010
+You can see it here under the course modules,
+
+00:17.010 --> 00:20.370
+for Docker Fundamentals, one repository,
+
+00:20.370 --> 00:24.210
+and Kubernetes Fundamentals, one more repository.
+
+00:24.210 --> 00:27.090
+So, in detail, you'll have everywhere, wherever you go,
+
+00:27.090 --> 00:29.310
+you'll have a step-by-step documentation
+
+00:29.310 --> 00:31.500
+available for all the things.
+
+00:31.500 --> 00:32.970
+So everywhere you'll find
+
+00:32.970 --> 00:35.310
+a detailed step-by-step instructions
+
+00:35.310 --> 00:38.100
+including the kubectl commands you need to deploy
+
+00:38.100 --> 00:41.730
+and the Docker images you need to execute and everything.
+
+00:41.730 --> 00:44.550
+So all these three repositories,
+
+00:44.550 --> 00:48.360
+you can either fork it and then log into your GitHub repo,
+
+00:48.360 --> 00:51.510
+and then fork it so that you have everything at your place
+
+00:51.510 --> 00:52.920
+means like at your GitHub repo,
+
+00:52.920 --> 00:56.370
+or you can download them as a zip and then unzip
+
+00:56.370 --> 00:59.400
+and then use it from your local desktop.
+
+00:59.400 --> 01:01.470
+So anything is fine.
+
+01:01.470 --> 01:05.160
+So now, if you see here, so all these things, right?
+
+01:05.160 --> 01:07.080
+So one more thing you need to understand here
+
+01:07.080 --> 01:11.100
+is in every of the sections, in any of these sections,
+
+01:11.100 --> 01:14.430
+you'll find something called kube manifests folder.
+
+01:14.430 --> 01:16.020
+So inside that only you'll find
+
+01:16.020 --> 01:18.300
+all your Kubernetes manifests
+
+01:18.300 --> 01:20.550
+for whatever the use case you are implementing
+
+01:20.550 --> 01:22.500
+everything will be found there.
+
+01:22.500 --> 01:24.330
+So when you're progressing through the course
+
+01:24.330 --> 01:26.220
+you are going to understand in detail
+
+01:26.220 --> 01:28.350
+but I am just trying to explain you
+
+01:28.350 --> 01:31.710
+that the kube manifest folder is for mainly holding
+
+01:31.710 --> 01:35.847
+the Kubernetes manifest in entire course.
+
+01:35.847 --> 01:38.100
+This completes the introductory part
+
+01:38.100 --> 01:41.430
+of Kubernetes Masterclass in AWS.
+
+01:41.430 --> 01:43.770
+So we'll start with the hands-on exercises
+
+01:43.770 --> 01:45.000
+from our next lecture.
+
+01:45.000 --> 01:48.330
+Primarily we'll start with the creating a EKS cluster
+
+01:48.330 --> 01:51.240
+using EKS CTL in our next lecture.
+
+01:51.240 --> 01:53.130
+So I'll see you in the next lecture.
+
+01:53.130 --> 01:54.270
+Until then, bye bye.
+
+01:54.270 --> 01:55.103
+Thank you.
