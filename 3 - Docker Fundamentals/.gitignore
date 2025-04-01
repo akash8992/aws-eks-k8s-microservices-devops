@@ -8,6 +8,10 @@
 /tmp
 /out-tsc
 
+
+
+#######somw changes in the path
+
 # dependencies
 node_modules
 
